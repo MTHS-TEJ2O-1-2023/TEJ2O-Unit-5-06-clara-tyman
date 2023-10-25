@@ -5,13 +5,13 @@
  * This program finds teh distance using a sonar
 */
 
-let distanceToObject:number = 0
+let distanceToObject: number = 0
 
-//setup
+// setup
 basic.showIcon(IconNames.Happy)
 
-//find sitance from sonar
-input.onButtonPressed(Button.A, function() {
+// find sitance from sonar
+input.onButtonPressed(Button.A, function () {
   basic.clearScreen()
   distanceToObject = sonar.ping(
     DigitalPin.P1,
@@ -21,4 +21,3 @@ input.onButtonPressed(Button.A, function() {
   basic.showNumber(distanceToObject)
   basic.showIcon(IconNames.Silly)
 })
-
